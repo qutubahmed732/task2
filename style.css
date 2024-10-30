@@ -1,4 +1,4 @@
-/* * {
+/* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -186,12 +186,14 @@ span {
     .input-section {
         margin: 40px 1100px;
     }
-} */
+}
+    */
 
 
 
+    
 
-/* Global Reset */
+    /* Global Reset */
 * {
     margin: 0;
     padding: 0;
