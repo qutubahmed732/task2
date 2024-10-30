@@ -129,6 +129,8 @@ span {
     text-decoration: underline;
 }
 
+
+
 @media (max-width: 650px) {
 
     body {
@@ -177,5 +179,11 @@ span {
 
     .heading {
         width: 100%;
+    }
+}
+
+@media (max-width < 2088px) {
+    .input-section {
+        margin: 40px 1100px;
     }
 }
