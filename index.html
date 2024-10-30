@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-section">
+        <div class="logo">
+          <img src="logo.png" alt="company logo" />
+        </div>
+        <div class="heading">
+          <h2>WELCOME BACK!</h2>
+          <p>
+            Log in to your account using your email and password to continue.
+          </p>
+        </div>
+        <div class="signin-section">
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email" placeholder="Email*" required />
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="password*"
+           required/>
+        </div>
+        <div class="checkbox-section">
+          <label
+            ><input type="checkbox" name="checkbox" id="checkbox" /> &nbsp; Remember
+            me</label
+          >
+          <a class="forgot__password" href="#"><img class="lock" src="Lock.png" alt="lock image"> Forgot my password</a>
+        </div>
+        <button>Log In</button>
+        <a class="last-anchor" href="#">Don't have an account? <span>Sign Up</span></a>
+      </div>
+    </div>
+  </body>
+</html>
