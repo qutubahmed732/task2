@@ -191,7 +191,7 @@ span {
 
 
 
-    
+
 
     /* Global Reset */
 * {
@@ -298,15 +298,16 @@ h2 {
 .forgot__password {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
+    gap: 5px;
     color: black;
     font-weight: 600;
 }
 
 /* Lock Icon */
 .lock {
-    width: 10%;
-    height: 90%;
+    width: 16px;
+    height: 16px;
 }
 
 /* Button */
