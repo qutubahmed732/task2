@@ -182,8 +182,3 @@ span {
     }
 }
 
-@media (max-width : 1920px) {
-    .input-section {
-        margin: 40px 1100px;
-    }
-}
