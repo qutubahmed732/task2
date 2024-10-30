@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -37,7 +37,7 @@ body {
 .logo {
     width: 15rem;
     height: 3rem;
-    /* background-color: black; */
+    
     text-align: center;
     color: black;
     filter: brightness(0) saturate(100%);
@@ -49,7 +49,7 @@ img {
 }
 
 .heading {
-    /* border: 1px solid black; */
+    
     color: #787486;
     width: 80%;
 }
@@ -61,7 +61,7 @@ h2 {
 }
 
 .signin-section {
-    /* border: 1px solid black; */
+    
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -185,5 +185,208 @@ span {
 @media (max-width > 2080px) {
     .input-section {
         margin: 40px 1100px;
+    }
+} */
+
+
+
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Styles */
+body {
+    background-image: url('background.jfif');
+    background-repeat: no-repeat;
+    background-size: cover; /* Keeps background proportional */
+    background-position: center center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form Section */
+.input-section {
+    width: 90%; /* Responsive default width */
+    max-width: 400px; /* Prevents overflow on larger screens */
+    padding: 50px 20px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin: 40px auto; /* Centers element */
+}
+
+/* Logo */
+.logo {
+    width: 10rem;
+    height: auto;
+    color: black;
+    filter: brightness(0) saturate(100%);
+}
+
+/* Images */
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Headings */
+.heading {
+    color: #787486;
+    width: 80%;
+}
+
+h2 {
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+/* Sign-in Section */
+.signin-section {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: justify;
+}
+
+.signin-section > label {
+    margin-bottom: 5px;
+}
+
+.signin-section > input {
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-color: rgba(229, 228, 235, 0.445);
+    padding-inline: 20px;
+    font-size: 16px;
+}
+
+/* Password Input with Eye Icon */
+.signin-section > input[type='password'] {
+    background-image: url('fi-rr-eye-crossed.png');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+/* Checkbox Section */
+.checkbox-section {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Forgot Password */
+.forgot__password {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: black;
+    font-weight: 600;
+}
+
+/* Lock Icon */
+.lock {
+    width: 10%;
+    height: 90%;
+}
+
+/* Button */
+button {
+    width: 80%;
+    height: 50px;
+    background-color: #F0521B;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Links */
+.last-anchor {
+    text-decoration: none;
+    color: black;
+}
+
+span {
+    color: #F0521B;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Portrait Mode (default adjustments) */
+@media (orientation: portrait) {
+    .input-section {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .logo {
+        width: 8rem;
+    }
+
+    .signin-section,
+    .checkbox-section {
+        width: 100%;
+    }
+}
+
+/* Landscape Mode */
+@media (orientation: landscape) {
+    .input-section {
+        width: 60%;
+        max-width: 600px;
+    }
+
+    .logo {
+        width: 12rem;
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 768px) {
+    .input-section {
+        width: 80%;
+    }
+}
+
+/* Small Devices (Phones) */
+@media (max-width: 480px) {
+    .input-section {
+        width: 90%;
+    }
+
+    .logo {
+        width: 6rem;
+        height: auto;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .heading {
+        width: 100%;
+    }
+
+    .forgot__password {
+        font-weight: 300;
+        font-size: 10px;
     }
 }
